@@ -36,6 +36,10 @@ jobs:
             os: macos-latest
             rust: stable
             target: aarch64-apple-darwin
+          - build: linux musl i686
+            os: ubuntu-latest
+            rust: stable
+            target: i686-unknown-linux-musl
     steps:
       - name: Set release tag
         run: |
